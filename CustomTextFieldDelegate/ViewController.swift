@@ -8,12 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    private var textField: CustomTextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        textField = CustomTextField()
+        textField.delegate = self
     }
+}
 
-
+extension ViewController: UITextFieldDelegate {
+    
 }
 
